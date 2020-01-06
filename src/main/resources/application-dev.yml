@@ -1,8 +1,6 @@
 server:
   port: 8080
 spring:
-  #  profiles:
-  #    active: oyster
   mail:
     host: smtp.qq.com
     username: 403827354@qq.com
@@ -32,7 +30,7 @@ spring:
         enabled: false
   cache:
     caffeine:
-      spec: maximumSize=500,expireAfterAccess=600s
+      spec: maximumSize=500,expireAfterAccess=1800s
     type: caffeine
 management:
   endpoints:
