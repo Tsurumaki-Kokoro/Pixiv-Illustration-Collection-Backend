@@ -17,31 +17,20 @@ spring:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
   redis:
+    database: 0
     host: redis
     port: 6379
-    password: Cheerfun.dev
   datasource:
-    url: jdbc:mysql://mysql:3306/pixivic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://mysql:3306/pixivic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: Cheerfun.dev
     type: com.alibaba.druid.pool.DruidDataSource
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
     batch:
       job:
         enabled: false
   cache:
     caffeine:
-      spec: maximumSize=500,expireAfterAccess=1800s
+      spec: maximumSize=788,expireAfterAccess=3600s
     type: caffeine
 management:
   endpoints:
@@ -61,10 +50,10 @@ pixiv:
     client_secret: W9JZoJe00qPvJsiyCGT3CCtC6ZUtdpKpzMbNlUGP
     refresh_token: 07FHA5xA6NkOIxIayqm3tZbJqxbypDJHrXguT7cazLI
     device_token: fb12e7c1945000850deb5f7001c02745
-    config: /home/PIC/user2.json
+    config: D:\Backup\配置文件\user2.json
 saucenao:
   token:
-    path: /home/PIC/saucenao.json
+    path: D:\Backup\配置文件\saucenao.json
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: true
@@ -72,6 +61,7 @@ mybatis:
 elasticsearch:
   ip: elasticsearch
 apiLog:
-  path: /var/log/nginx/api.pixivic.com
+  path: D:\log
 sensitiveWordList:
-  path: /home/PIC/sensitive
+  path: D:\Backup\配置文件\sensitive
+
