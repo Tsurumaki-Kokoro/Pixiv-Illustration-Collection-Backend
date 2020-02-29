@@ -1,6 +1,5 @@
 server:
   port: 8080
-spring:
   mail:
     host: smtp.qq.com
     username: 403827354@qq.com
@@ -17,20 +16,31 @@ spring:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
   redis:
-    database: 0
     host: redis
     port: 6379
+    password: Cheerfun.dev
   datasource:
-    url: jdbc:mysql://mysql:3306/pixivic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://mysql:3306/pixivic?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
     username: root
     password: Cheerfun.dev
     type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
     batch:
       job:
         enabled: false
   cache:
     caffeine:
-      spec: maximumSize=788,expireAfterAccess=3600s
+      spec: maximumSize=1024,expireAfterAccess=1800s
     type: caffeine
 management:
   endpoints:
@@ -48,12 +58,11 @@ pixiv:
   oauth:
     client_id: KzEZED7aC0vird8jWyHM38mXjNTY
     client_secret: W9JZoJe00qPvJsiyCGT3CCtC6ZUtdpKpzMbNlUGP
-    refresh_token: 07FHA5xA6NkOIxIayqm3tZbJqxbypDJHrXguT7cazLI
     device_token: fb12e7c1945000850deb5f7001c02745
-    config: D:\Backup\配置文件\user2.json
+    config: /Users/oysterqaq/PIC/user2.json
 saucenao:
   token:
-    path: D:\Backup\配置文件\saucenao.json
+    path: /Users/oysterqaq/PIC/saucenao.json
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: true
@@ -61,7 +70,6 @@ mybatis:
 elasticsearch:
   ip: elasticsearch
 apiLog:
-  path: D:\log
+  path: /var/log/nginx/api.pixivic.com
 sensitiveWordList:
-  path: D:\Backup\配置文件\sensitive
-
+  path: /Users/oysterqaq/PIC/sensitive
