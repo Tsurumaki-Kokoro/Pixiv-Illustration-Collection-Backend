@@ -70,6 +70,6 @@ mybatis:
 elasticsearch:
   ip: elasticsearch
 apiLog:
-  path: /var/log/nginx/api.pixivic.com
+  path: /Users/oysterqaq/Desktop
 sensitiveWordList:
   path: /Users/oysterqaq/PIC/sensitive
