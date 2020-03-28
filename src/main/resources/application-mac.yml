@@ -1,9 +1,10 @@
 server:
   port: 8080
+spring:
   mail:
-    host: smtp.qq.com
-    username: 403827354@qq.com
-    password: mgysdtrrgxzsbhie
+    host: mail
+    username: admin@cheerfun.dev
+    password: Cheerfun.dev
     protocol: smtp
     properties:
       mail:
