@@ -69,7 +69,10 @@ mybatis:
     mapUnderscoreToCamelCase: true
   type-handlers-package: dev.cheerfun.pixivic.common.util.json
 elasticsearch:
-  ip: elasticsearch
+  ip:
+    - es-01
+    - es-02
+    - es-03
 apiLog:
   path: /var/log/nginx/api.pixivic.com
 sensitiveWordList:
