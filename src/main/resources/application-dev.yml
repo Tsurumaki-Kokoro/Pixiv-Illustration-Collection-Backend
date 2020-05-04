@@ -67,6 +67,7 @@ saucenao:
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: true
+    og-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   type-handlers-package: dev.cheerfun.pixivic.common.util.json
 elasticsearch:
   ip:
