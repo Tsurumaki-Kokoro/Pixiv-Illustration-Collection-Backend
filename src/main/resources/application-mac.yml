@@ -80,5 +80,4 @@ apiLog:
   path: /Users/oysterqaq/Desktop
 sensitiveWordList:
   path: /Users/oysterqaq/PIC/sensitive
-logging:
-  level: error
+
