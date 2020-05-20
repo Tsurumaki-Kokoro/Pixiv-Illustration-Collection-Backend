@@ -1,6 +1,9 @@
 server:
   port: 8080
 spring:
+  mvc:
+    async:
+      request-timeout: 10000
   mail:
     host: smtp.qq.com
     username: 403827354@qq.com
