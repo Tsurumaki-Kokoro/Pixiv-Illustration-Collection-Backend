@@ -80,4 +80,8 @@ apiLog:
   path: /Users/oysterqaq/Desktop
 sensitiveWordList:
   path: /Users/oysterqaq/PIC/sensitive
-
+ssh:
+  configPath: /Users/oysterqaq/PIC/
+sitemap:
+  savePath: /Users/oysterqaq/PIC/sitemap
+  remoteSavePath: /home/PIC/sitemap
