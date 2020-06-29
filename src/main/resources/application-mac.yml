@@ -81,7 +81,7 @@ apiLog:
 sensitiveWordList:
   path: /Users/oysterqaq/PIC/sensitive
 ssh:
-  configPath: /Users/oysterqaq/PIC/
+  configPath: /Users/oysterqaq/PIC/ssh.conf
 sitemap:
   savePath: /Users/oysterqaq/PIC/sitemap
   remoteSavePath: /home/PIC/sitemap
