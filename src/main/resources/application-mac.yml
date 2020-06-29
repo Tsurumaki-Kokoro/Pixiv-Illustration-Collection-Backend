@@ -83,5 +83,5 @@ sensitiveWordList:
 ssh:
   configPath: /Users/oysterqaq/PIC/ssh.conf
 sitemap:
-  savePath: /Users/oysterqaq/PIC/sitemap
-  remoteSavePath: /home/PIC/sitemap
+  savePath: /Users/oysterqaq/PIC/sitemap/
+  remoteSavePath: /home/sitemap/
