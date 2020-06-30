@@ -84,4 +84,4 @@ ssh:
   configPath: /Users/oysterqaq/PIC/ssh.conf
 sitemap:
   savePath: /Users/oysterqaq/PIC/sitemap/
-  remoteSavePath: /home/sitemap/
+  remoteSavePath: /home/sitemap
