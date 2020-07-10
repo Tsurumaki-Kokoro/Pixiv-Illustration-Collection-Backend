@@ -19,7 +19,8 @@ spring:
   redis:
     host: redis
     port: 6379
-    password: Cheerfun.dev
+    cluster:
+      nodes: redis:6379,redis:6380,redis:6381
   rabbitmq:
     host: rabbitmq
     port: 5672
