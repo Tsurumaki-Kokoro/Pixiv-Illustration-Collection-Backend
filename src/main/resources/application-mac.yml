@@ -19,8 +19,7 @@ spring:
   redis:
     host: redis
     port: 6379
-    cluster:
-      nodes: redis:6379,redis:6380,redis:6381
+    password: Cheerfun.dev
   rabbitmq:
     host: rabbitmq
     port: 5672
@@ -70,10 +69,10 @@ pixiv:
 saucenao:
   token:
     path: /Users/oysterqaq/PIC/saucenao.json
-  #mybatis:
-  #  configuration:
-  #    mapUnderscoreToCamelCase: true
-  #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   type-handlers-package: dev.cheerfun.pixivic.common.util.json
 elasticsearch:
   ip: elasticsearch
